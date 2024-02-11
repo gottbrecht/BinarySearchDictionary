@@ -12,7 +12,7 @@ function createWordObject(line) {
   };
 }
 
-const data = fs.readFileSync('./data/DDO_fullforms.txt', 'utf-8');
+const data = fs.readFileSync('./DDO_fullforms.txt', 'utf-8');
 const lines = data.split('\n');
 
 const wordsArray = lines.map(line => createWordObject(line));// array of objects
